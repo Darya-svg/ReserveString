@@ -1,0 +1,18 @@
+topic:
+  name:
+    input: "records_from_api"
+    output: "reversed_record"
+
+server:
+  port: "8090"
+
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.example: INFO
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    console: "%d %-5level %logger : %msg%n"
+  file:
+    name: C:/ReverseString/logs
